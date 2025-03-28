@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { Edit, FileText, KeyRound, Search, Shield, Trash, User, UserCircle } from "lucide-react"; 
 
 const userData = [
-	{ id: 1, name: "João António", email: "joaoantonio@gmail.com", area:"TICs", role: "Técnico de Redes", hospital:"Maria Pia - Luanda",  status: "Activo" },
-	{ id: 2, name: "José Pedro de Castro", email: "josepedro@gmail.com", area:"Atendimento", role: "Administrador", hospital:"Central - Luanda", status: "Activo" },
-	{ id: 3, name: "Bruno Manuel", email: "brunomanuel@gmail.com", area:"Finanças",  role: "Analista Financeiro", hospital:"Central - Uige", status: "Inactivo" },
-	{ id: 4, name: "Paula Bambi", email: "paulabambi@gmail.com", area:"Limpeza",  role: "Faxineira", hospital:"Central - Benguel", status: "Activo" }, 
-	{ id: 5, name: "Pedro António Manuel", email: "pedormanuel@gmail.com", area:"Recepção", role: "Agendador", hospital:"Central - Huambo", status: "Inactivo" },
-	{ id: 6, name: "Rocha Zangue", email: "rochazangue@gmail.com", area:"Recepção", role: "Secretário", hospital:"Central - Huambo", status: "Activo" }, 
+	{ id: 1, name: "João António", email: "joaoantonio@gmail.com", area:"TICs", role: "Técnico de Redes", status: "Activo" },
+	{ id: 2, name: "José Pedro de Castro", email: "josepedro@gmail.com", area:"Atendimento", role: "Administrador", status: "Activo" },
+	{ id: 3, name: "Bruno Manuel", email: "brunomanuel@gmail.com", area:"Finanças",  role: "Analista Financeiro", status: "Inactivo" },
+	{ id: 4, name: "Paula Bambi", email: "paulabambi@gmail.com", area:"Limpeza",  role: "Faxineira", status: "Activo" }, 
+	{ id: 5, name: "Pedro António Manuel", email: "pedormanuel@gmail.com", area:"Recepção", role: "Agendador", status: "Inactivo" },
+	{ id: 6, name: "Rocha Zangue", email: "rochazangue@gmail.com", area:"Recepção", role: "Secretário", status: "Activo" }, 
 ];
 
 const UsersTable = () => {
@@ -33,7 +33,7 @@ const UsersTable = () => {
 		>
 			<div className='flex flex-col md:flex-row md:justify-between items-center mb-6 gap-4'>
     <h2 className='text-lg md:text-xl lg:text-2xl font-semibold text-gray-100 text-center md:text-left'>
-        Administração Nacional
+		Recursos Humanos
     </h2>
 				<div className="relative w-full max-w-xs">
 					<Search className="absolute left-3 top-2.5 text-gray-400" size={20} />
@@ -63,9 +63,7 @@ const UsersTable = () => {
 							<th className='px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider'>
 								Função
 							</th>
-							<th className='px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider'>
-								Unidade Hospitalar
-							</th>
+
 							<th className='px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider'>
 								Status
 							</th>
@@ -105,9 +103,7 @@ const UsersTable = () => {
 								<td className='text-sm text-gray-300'>
 										{user.role}
 								</td>
-								<td className='text-sm text-gray-300'>
-										{user.hospital}
-								</td>
+ 
 
 								<td className='px-6 py-4 whitespace-nowrap'>
 									<span

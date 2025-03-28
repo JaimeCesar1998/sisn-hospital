@@ -63,9 +63,7 @@ const UsersTable = () => {
 							<th className='px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider'>
 								Função
 							</th>
-							<th className='px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider'>
-								Unidade Hospitalar
-							</th>
+ 
 							<th className='px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider'>
 								Status
 							</th>
@@ -105,9 +103,7 @@ const UsersTable = () => {
 								<td className='text-sm text-gray-300'>
 										{user.role}
 								</td>
-								<td className='text-sm text-gray-300'>
-										{user.hospital}
-								</td>
+ 
 
 								<td className='px-6 py-4 whitespace-nowrap'>
 									<span
