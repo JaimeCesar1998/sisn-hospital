@@ -24,9 +24,10 @@ const LoginPage = ({ onLogin }) => {
             <img src="/gov.png" alt="Governo" className="h-16" />
           </div>
           <p className="text-center text-gray-300 mb-4">
-            <strong>Sistema Integrado de Saúde Nacional</strong>
+            <strong>República de Angola</strong><br />
+            <strong>Ministério da Saúde</strong>
           </p>
-          <p className="text-center text-gray-500">Painel do Hospital</p>
+          <p className="text-center text-gray-500">Hospital Geral de Luanda</p>
         </div>
 
         <hr />

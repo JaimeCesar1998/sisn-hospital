@@ -33,7 +33,7 @@ const UsersTable = () => {
 		>
 			<div className='flex flex-col md:flex-row md:justify-between items-center mb-6 gap-4'>
     <h2 className='text-lg md:text-xl lg:text-2xl font-semibold text-gray-100 text-center md:text-left'>
-		 Corpo Clínico Nacional
+		Profissionais Clínicos
     </h2>
 				<div className="relative w-full max-w-xs">
 					<Search className="absolute left-3 top-2.5 text-gray-400" size={20} />

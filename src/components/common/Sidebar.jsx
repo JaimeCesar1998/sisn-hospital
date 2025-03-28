@@ -37,7 +37,7 @@ const Sidebar = () => {
 					</div>
 					{/* Nome do sistema */}
 					<span className={`mt-2 text-white font-semibold transition-all text-center ${isSidebarOpen ? "text-sm" : "text-xs"}`}>
-						{isSidebarOpen ? "Sistema Integrado de Saúde Nacional - Hospital" : "SISN-H"}
+						{isSidebarOpen ? "Hospital Geral de Luanda" : "SYS-H"}
 					</span>
 				</div>
 
