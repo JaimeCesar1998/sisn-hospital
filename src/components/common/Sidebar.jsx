@@ -1,4 +1,4 @@
-import { BarChart2, DollarSign, FileLineChartIcon, HeartPulse, Hospital, LayoutDashboardIcon, Menu, Settings, Users, ChevronLeft, ChevronRight, FlaskConical } from "lucide-react";
+import { BarChart2, DollarSign, FileLineChartIcon, HeartPulse, Hospital, LayoutDashboardIcon, Menu, Settings, Users, ChevronLeft, ChevronRight, FlaskConical, Pill, GitCommitVertical } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
@@ -6,6 +6,8 @@ import { Link, useLocation } from "react-router-dom";
 const SIDEBAR_ITEMS = [
 	{ name: "Visão Geral", icon: LayoutDashboardIcon, color: "#6366f1", href: "/" },
 	{ name: "Gerir Consultas", icon: FlaskConical, color: "#6366f1", href: "/consultas" },
+	{ name: "Farmácia", icon: Pill, color: "#D396f1", href: "/farmacia" },
+	{ name: "Hemoterápia", icon: GitCommitVertical, color: "#6366f1", href: "/hemoterapia" },
 	{ name: "RH", icon: Users, color: "#8B5CF6", href: "/administracao_nacional" },
 	{ name: "Profissionais Clínicos", icon: HeartPulse, color: "#8B5CF6", href: "/corpo_clinico_nacional" },
 	{ name: "Pacientes", icon: Users, color: "#EC4899", href: "/pacientes_nacional" },

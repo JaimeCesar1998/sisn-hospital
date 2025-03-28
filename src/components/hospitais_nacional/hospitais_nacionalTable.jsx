@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FileText, LucideEye, Plus, Search } from "lucide-react";
+import { BookMarked, FileText, LucideEye, Plus, Search, Stethoscope } from "lucide-react";
 
 const consultaData = [
     { id: 1, paciente: "João Silva", hipotese: "Gripe", medico: "Dr. André", data: "2024-03-25", status: "Realizada" },
@@ -41,7 +41,10 @@ const ConsultasTable = () => {
                     Consultas Médicas
                 </h2>
                 <button className='mt-4 flex rounded items-center text-indigo-400 hover:text-indigo-300 transition duration-200'>
-                    <Plus size={18} className='mr-2' /> Cadastrar
+                    <Stethoscope size={18} className='mr-2' /> Realizar
+                </button>
+				<button className='mt-4 flex rounded items-center text-indigo-400 hover:text-indigo-300 transition duration-200'>
+                    <BookMarked size={18} className='mr-2' /> Agendar
                 </button>
                 <div className="relative w-full max-w-xs">
                     <Search className="absolute left-3 top-2.5 text-gray-400" size={20} />
